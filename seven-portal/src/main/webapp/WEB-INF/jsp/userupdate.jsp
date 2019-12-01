@@ -1,0 +1,70 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>个人中心</title>
+<link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/css/main.css">
+    <link rel="stylesheet" type="text/css" href="${pageContext.request.contextPath}/static/layui/css/layui.css">
+    <script type="text/javascript" src="${pageContext.request.contextPath}/static/layui/layui.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=0">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1">
+</head>
+<body>
+<%@ include file="indexbanner.jsp"%>
+  <div class="content content-nav-base  login-content">
+    <div class="login-bg">
+      <div class="login-cont w1200">
+        <div >
+          <div class="layui-col-md6" style="padding-top:100px;">
+      			<div class="layui-card">
+      			  <div class="layui-card-header">个人信息</div>
+      			  	<form action="${pageContext.request.contextPath}/user/update" method="post">
+			    			
+			    					<div class="layui-card-body">
+			      					用户名：<input type="text" name="username" value="${user.username}"><br>
+			      					密码：<input type="text" name="password" value="${user.password}"><br>
+			      					电话：<input type="text" name="phone" value="${user.phone}"><br>
+			      					电子邮箱：<input type="text" name="email" value="${user.email}"><br>
+    								
+			    					</div>
+			    					&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			    					<button class="layui-btn" type="submit">提交</button>
+			    			</form>
+      				</div>
+    				</div>
+    			</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer">
+    <div class="ng-promise-box">
+      <div class="ng-promise w1200">
+        <p class="text">
+          <a class="icon1" href="javascript:;">7天无理由退换货</a>
+          <a class="icon2" href="javascript:;">满99元全场免邮</a>
+          <a class="icon3" style="margin-right: 0" href="javascript:;">100%品质保证</a>
+        </p>
+      </div>
+    </div>
+    <div class="mod_help w1200">                                     
+      <p>
+        <a href="javascript:;">关于我们</a>
+        <span>|</span>
+        <a href="javascript:;">帮助中心</a>
+        <span>|</span>
+        <a href="javascript:;">售后服务</a>
+        <span>|</span>
+        <a href="javascript:;">母婴资讯</a>
+        <span>|</span>
+        <a href="javascript:;">关于货源</a>
+      </p>
+      <p class="coty">母婴商城版权所有 &copy; 2012-2020</p>
+    </div>
+  </div>
+</body>
+</html>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.book.portal.mapper.BookDetailsMapper" >
+	<select id="getBookDetailsById" parameterType="long" resultType="com.book.portal.pojo.BookDetails">
+		SELECT 
+			a.id,
+			a.book_name bookName,
+			a.sell_point sellPoint,
+			a.author,
+			a.price,
+			a.image,
+			a.status,
+			a.num,
+			b.`name` book_cat,
+			c.book_desc bookDesc
+			FROM tb_book a 
+			LEFT JOIN tb_book_cat b ON a.cid=b.id 
+			LEFT JOIN tb_book_desc c ON a.id=c.book_id
+			where a.id=#{id}
+	</select>
+</mapper>

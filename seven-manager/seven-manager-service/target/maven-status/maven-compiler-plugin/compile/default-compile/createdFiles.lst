@@ -1,0 +1,14 @@
+com\book\service\ItemDescService.class
+com\book\service\ItemCatService.class
+com\book\service\Impl\ItemCatServiceImpl.class
+com\book\service\OrderService.class
+com\book\service\Impl\OrderServiceImpl.class
+com\book\service\AddressService.class
+com\book\service\Impl\ItemServiceImpl.class
+com\book\service\Impl\PictureUploadServiceImpl.class
+com\book\service\Impl\UserServiceImpl.class
+com\book\service\Impl\ItemDescServiceImpl.class
+com\book\service\ItemService.class
+com\book\service\PictureUploadService.class
+com\book\service\Impl\AddressServiceImpl.class
+com\book\service\UserService.class

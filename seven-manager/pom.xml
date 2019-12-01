@@ -1,0 +1,37 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <groupId>seven</groupId>
+    <artifactId>seven-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+  </parent>
+  <artifactId>seven-manager</artifactId>
+  <packaging>pom</packaging>
+  <modules>
+  	<module>seven-manager-pojo</module>
+  	<module>seven-manager-mapper</module>
+  	<module>seven-manager-service</module>
+  	<module>seven-manager-web</module>
+  </modules>
+  <dependencies>
+  	<dependency>
+  		<groupId>seven</groupId>
+	    <artifactId>seven-common</artifactId>
+	    <version>0.0.1-SNAPSHOT</version>
+  	</dependency>
+  </dependencies>
+  <build>
+  	<!--配置maven插件 tomcat  -->
+  	<plugins>
+  		<plugin>
+  			<groupId>org.apache.tomcat.maven</groupId>
+			<artifactId>tomcat7-maven-plugin</artifactId>
+			<version>2.2</version>
+			<configuration>
+				<port>8082</port>
+				<path>/</path>
+			</configuration>
+  		</plugin>
+  	</plugins>
+  </build>
+</project>

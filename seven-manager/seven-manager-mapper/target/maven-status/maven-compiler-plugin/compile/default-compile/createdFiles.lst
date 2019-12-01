@@ -1,0 +1,12 @@
+com\book\mapper\TbLocationMapper.class
+com\book\mapper\TbBookMapper.class
+com\book\mapper\TbOrderBookMapper.class
+com\book\mapper\OrderAllMapper.class
+com\book\mapper\TbOrderMapper.class
+com\book\mapper\TbUserMapper.class
+com\book\mapper\TbBookDescMapper.class
+com\book\mapper\TbOrderShippingMapper.class
+com\book\mapper\TbUserCarMapper.class
+com\book\mapper\BookSolrMapper.class
+com\book\mapper\TbAddressMapper.class
+com\book\mapper\TbBookCatMapper.class
